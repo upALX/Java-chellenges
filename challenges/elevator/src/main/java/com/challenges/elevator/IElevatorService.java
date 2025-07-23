@@ -1,3 +1,5 @@
+package com.challenges.elevator;
+
 import java.util.List;
 
 public interface IElevatorService {

@@ -1,8 +1,20 @@
-package challenges.elevator;
+package com.challenges.elevator;
+
+import java.io.InputStream;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        ElevatorService service = new ElevatorService("input.json"); //TODO: criar service
+        InputStream inputStream = Main.class.getResourceAsStream("/input.json");
+        if (inputStream == null) {
+            System.err.println("Arquivo input.json não encontrado em resources!");
+            return;
+        }
+
+        ElevatorService service = new ElevatorService(inputStream); 
 
         System.out.println("Andares menos utilizados: " + service.leastUsedFloors());
         System.out.println("Elevadores mais utilizados: " + service.mostUsedElevators());
