@@ -1,26 +1,29 @@
 # Java chell
 
 *Overview*
+
 A public repo with Java solved challenges.
 
 ---
 
-required:
-java >= 21.0.7
-maven >= 3.8.7
+**required**:
 
-How to use:
+- java >= 21.0.7
+- maven >= 3.8.7
+
+**How to use**:
 
 1 - Clone this repo:
 
 ```git clone git@github.com:upALX/Java-chellenges.git jc```
 
 2 - BASH: Compile de code using maven (on the same level at poml.xml file of challenge selected):
+
 ```mvn compile```
 
 3 - BASH: Run the selected challenge (on the same level at poml.xml file of challenge selected):
 
-```mvn exec:java"```
+```mvn exec:java```
 
 or 
 
