@@ -13,16 +13,18 @@ How to use:
 
 1 - Clone this repo:
 
-``` git@github.com:upALX/Java-chellenges.git ```
+```git clone git@github.com:upALX/Java-chellenges.git jc```
 
-2 - Compile de code using maven (on the same level at poml.xml file):
+2 - BASH: Compile de code using maven (on the same level at poml.xml file of challenge selected):
 ```mvn compile```
 
-3 - Run the selected challenge (on the same level at poml.xml file):
+3 - BASH: Run the selected challenge (on the same level at poml.xml file of challenge selected):
+
+```mvn exec:java"```
+
+or 
 
 ```mvn exec:java -Dexec.mainClass="com.challenges.challenge-name.Main"```
-
-*if your challenge is "elevator" for example, change "challenge-name" for "elevator" like ""com.challenges.elevator.Main". It's simple.*
 
 ## Next steps
 
